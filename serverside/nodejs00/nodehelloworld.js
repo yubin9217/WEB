@@ -5,11 +5,14 @@ http.createServer(function(request,response){
     if(request.url!=="/favicon.ico"){
         console.log("浏览器请求访问");
         response.write("HelloWorld");
-        var testuserP=new userP();
-        testuserP.firstName="yu";
-        testuserP.lastName="bin";
-        testuserP.userAction();
-        response.end()
+        // var testuserP=new userP();
+        // testuserP.firstName="yu";
+        // testuserP.lastName="bin";
+        // testuserP.userAction();
+        userP.firstName="yu";
+        userP.lastName="bin";
+        userP.userAction();
+        response.end();
     }
 }).listen(8000);
 console.log("Server running at http://127.0.0.1/");
