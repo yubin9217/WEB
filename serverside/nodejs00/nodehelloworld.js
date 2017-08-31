@@ -1,5 +1,6 @@
 var http=require("http");
-var userP=require("./nodeFunModule.js");
+//var userP=require("./nodeFunModule.js");
+var anotherUserP=require("./nodeFunModuleExtend.js");
 http.createServer(function(request,response){
     response.writeHead(200,{"Content-Type":"text/html;charset=utf-8"});
     if(request.url!=="/favicon.ico"){
@@ -9,9 +10,9 @@ http.createServer(function(request,response){
         // testuserP.firstName="yu";
         // testuserP.lastName="bin";
         // testuserP.userAction();
-        userP.firstName="yu";
-        userP.lastName="bin";
-        userP.userAction();
+        var testanotherUserP=new anotherUserP("yu","bin");
+        testanotherUserP.anotheruserAction();
+        testanotherUserP.userAction();
         response.end();
     }
 }).listen(8000);
