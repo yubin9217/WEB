@@ -1,11 +1,8 @@
-function test(array){
-
-
+function test(array,callback){
     for(var i=0;i<3;i++){
         console.log("同步方法执行完毕!");
             process.nextTick(function(){
-                console.log(i);
-                console.log("异步方法执行完闭!");
+                callback(i);
             });
         // (function (n) {
         //     process.nextTick(function(){
@@ -14,6 +11,5 @@ function test(array){
         //     });
         // })(i);
     }
-
 }
 module.exports=test;
