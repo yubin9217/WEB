@@ -1,0 +1,59 @@
+div.box{
+	width:400px;
+	margin:auto;
+}
+ul.menu{
+	list-style: none;
+	border-color: #C4D5DF;
+    border-style: solid;
+    /*上 左右 下*/
+    border-width: 0px 1px 1px;
+	margin:auto;
+	width:100px;
+	padding:0px;
+	background: rgba(45,35,56,0.2);
+	
+}
+ul.menu li a{
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    background:#EBF3F8;
+	font-weight:700;
+    color: #5893B7;
+	text-indent: 14px;
+	border-top: 1px solid #C4D5DF;
+}
+ul.menu li a.current{
+	background:#B1D7EF;
+}
+ul.menu li ul li a{
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    background:#ffffff;
+	font-weight:400;
+    color: #42556B;
+	text-indent: 18px;
+	border-top: 0px solid #ffffff;
+    overflow: hidden;
+}
+ul.level2{
+	list-style: none;
+	display:none;
+	padding: 0px;
+	background: rgba(255,255,255);
+}
+
+/*a:link {color: #FF0000}		未访问的链接 
+a:visited {color: #00FF00}	已访问的链接 
+a:hover {color: #FF00FF}	鼠标移动到链接上 
+a:active {color: #0000FF}	选定的链接*/
+
+ul li ul li a:hover{
+	color:#f60;
+}
+
+a[href="#none"]{
+	text-decoration:none;
+}
