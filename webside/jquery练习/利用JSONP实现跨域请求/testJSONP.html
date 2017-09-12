@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>通过JSONP来实现跨域请求</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+</head>
+<body>
+	<p>The bus stop here</p>
+	<div id="content0"></div>
+	<script type="text/javascript">
+		function showEvents(data){
+			var newContent='';
+			for(var i = 0; i < data.events.length; i++){
+				newContent+='<div class="event">';
+				newContent+='<img src="' + data.events[i].map + '"';
+				newContent+='alt="' + data.events[i].location +'"/>';
+				newContent+='<p><b>' + data.events[i].location + '</b><br>';
+				newContent+=data.events[i].date + '</p>';
+				newContent+='</div>';
+			}
+			document.getElementById('content0').innerHTML=newContent;
+		}
+	</script>
+	<script src="http://htmlandcssbook.com/js/jsonp.js?callback=showEvents"></script>
+</body>
+</html>
