@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>利用jquery制作一个折叠面板</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div.menu{
+			border:1px black solid;
+			width:314px;
+			height:auto;
+			float:left;
+		}
+		div.button{
+			clear:both;
+			border:1px black solid;
+			width:120px;
+			height:20px;
+			line-height: 20px;
+			float:left;
+			display:inline;
+			margin:10px 96px;
+			background: url(img/up.gif) no-repeat center left;
+			background-size:15%;
+			text-indent: 20px;
+		}
+		p{
+			margin:0px;
+		}
+		ul{
+			list-style:none;
+			padding: 0px;
+			margin:0px;
+		}
+		li{
+
+			float:left;
+			width:100px;
+			height:30px;
+			line-height: 30px;
+			text-align: center;
+			margin:2px 0px 0px 2px;
+		}
+		a{
+			text-decoration:none;
+			color:black;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<body>
+	<div class="menu">
+			<ul>
+				<li><a href="#">佳能</a></li>
+				<li><a href="#">索尼</a></li>
+				<li><a href="#">三星</a></li>
+				<li><a href="#">尼康</a></li>
+				<li><a href="#">松下</a></li>
+				<li><a href="#">卡西欧</a></li>
+				<li><a href="#">富士</a></li>
+				<li><a href="#">柯达</a></li>
+				<li><a href="#">宾得</a></li>
+				<li><a href="#">理光</a></li>
+				<li><a href="#">奥林巴斯</a></li>
+				<li><a href="#">明基</a></li>
+				<li><a href="#">爱国者</a></li>
+				<li><a href="#">其他品牌相机</a></li>
+			</ul>
+		<div class="button">
+			<p>显示全部品牌</p>
+		</div>
+	</div>
+</body>
+</html>
