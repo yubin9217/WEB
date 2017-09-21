@@ -1,0 +1,28 @@
+div{
+	position: relative;
+}
+div h3{
+	border:black solid;
+	border-width: 1px 1px 0px;
+	font-family: black,sans-serif; 
+	font-size:1.4em;
+	color: white;
+	background: rgba(0,0,0,0.85);
+	width:250px;
+	padding: 10px;
+	margin: 0px;
+	line-height: 25px;
+}
+div p{
+	border:black solid 1px;
+	text-align:justify;
+	width:250px;
+	font-family: "SimSun",sans-serif;
+	font-weight: 500;
+	line-height: 25px;
+	font-size:1.1em;
+	padding: 10px;
+	margin: 0px;
+	letter-spacing:1px;
+	display: none;
+}
